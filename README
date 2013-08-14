@@ -1,0 +1,85 @@
+this is a command utility for parsing mpeg 4 file.
+
+you can copy/modify/distribute these codes according to AOSP multimedia
+framework's copyright items.
+
+I copy these codes from AOSP multimedia framework, but with some changes
+by myself.
+
+REMEMBER ONLY for alpha usage and at your own risk.
+
+and issues or contributions are welcomed.
+
+below is sample usage.
+
+$ ./gmpe4 /home/guohai/Downloads/VID_20130804_153806.mp4 
+welcome using gmpe4, version: 0.9.0
+mpeg4 file: /home/guohai/Downloads/VID_20130804_153806.mp4
+
+box: ftyp @ 0 size 28
+box: mdat @ 28 size 2792068
+box: moov @ 2792096 size 1797
+    box: mvhd @ 2792104 size 108
+    box: udta @ 2792212 size 253
+        box: cprt @ 2792220 size 18
+        box: auth @ 2792238 size 18
+        box: titl @ 2792256 size 18
+        box: dscp @ 2792274 size 18
+        box: perf @ 2792292 size 18
+        box: gnre @ 2792310 size 18
+        box: rtng @ 2792328 size 26
+        box: clsf @ 2792354 size 24
+        box: kywd @ 2792378 size 15
+        box: loci @ 2792393 size 39
+        box: albm @ 2792432 size 19
+        box: yrrc @ 2792451 size 14
+    box: trak @ 2792465 size 968
+        box: tkhd @ 2792473 size 92
+        box: mdia @ 2792565 size 868
+            box: mdhd @ 2792573 size 32
+            box: hdlr @ 2792605 size 45
+            box: minf @ 2792650 size 783
+                box: vmhd @ 2792658 size 20
+                box: dinf @ 2792678 size 36
+                    box: dref @ 2792686 size 28
+                box: stbl @ 2792714 size 719
+                    box: stsd @ 2792722 size 163
+                        box: avc1 @ 2792738 size 147
+                            box: avcC @ 2792824 size 41
+                            box: btrt @ 2792865 size 20
+                    box: stts @ 2792885 size 56
+                    box: stsc @ 2792941 size 64
+                    box: stsz @ 2793005 size 368
+                    box: stco @ 2793373 size 32
+                    box: stss @ 2793405 size 28
+    box: trak @ 2793433 size 460
+        box: tkhd @ 2793441 size 92
+        box: mdia @ 2793533 size 360
+            box: mdhd @ 2793541 size 32
+            box: hdlr @ 2793573 size 45
+            box: minf @ 2793618 size 275
+                box: smhd @ 2793626 size 16
+                box: dinf @ 2793642 size 36
+                    box: dref @ 2793650 size 28
+                box: stbl @ 2793678 size 215
+                    box: stsd @ 2793686 size 91
+                        box: mp4a @ 2793702 size 75
+                            box: esds @ 2793738 size 39
+                    box: stts @ 2793777 size 24
+                    box: stsc @ 2793801 size 40
+                    box: stsz @ 2793841 size 20
+                    box: stco @ 2793861 size 32
+
+
+summary of this presentation
+  duration: 3 s
+  created at: 2013-08-04 T 07:38:08 .000Z
+  last modified at: 2013-08-04 T 07:38:08 .000Z
+  has 2 track(s)
+    video track info:
+      width: 720
+      height: 480
+    audio track info:
+      channels: 1
+      sample rate: 16000 Hz
+
